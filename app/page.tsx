@@ -347,11 +347,11 @@ export default function Home() {
                             {previewProjects.map((project, index) => (
                                 <motion.div key={project.repo} whileHover={{ scale: 1.05, y: -4 }} whileTap={{ scale: 0.995 }} transition={{ duration: 0.12 }} className="group relative overflow-hidden rounded-[28px] border border-[var(--border)] bg-[var(--panel)] p-5 shadow-soft-ring">
                                     <div className="grid gap-4 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-                                        <div className="rounded-[24px] border border-[var(--border)] bg-[var(--surface)] p-3">
+                                        <div className="rounded-[10px] bg-[var(--surface)] p-0 overflow-hidden">
                                             {project.previewImage ? (
-                                                <img src={project.previewImage} alt={`${project[lang].name} preview`} className="aspect-[16/9] w-full rounded-[20px] object-cover" />
+                                                <img src={project.previewImage} alt={`${project[lang].name} preview`} className="aspect-[16/9] w-full rounded-[10px] object-cover" />
                                             ) : (
-                                                <div className="aspect-[16/9] rounded-[20px] bg-[#191919] dark:bg-[#101214] flex items-center justify-center px-4 text-center text-[10px] uppercase tracking-[0.32em] text-[var(--muted)]">{lang === 'en' ? 'Preview unavailable' : 'Preview tidak tersedia'}</div>
+                                                <div className="aspect-[16/9] rounded-[10px] bg-[#191919] dark:bg-[#101214] flex items-center justify-center px-4 text-center text-[10px] uppercase tracking-[0.32em] text-[var(--muted)]">{lang === 'en' ? 'Preview unavailable' : 'Preview tidak tersedia'}</div>
                                             )}
                                         </div>
                                         <div className="space-y-4">
