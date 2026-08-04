@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
+import VisitorRecorder from '@/components/VisitorRecorder';
 
 export const metadata: Metadata = {
     title: 'Irfan Hariyanto — Portofolio Desain Grafis & WhatsApp Bot Developer',
@@ -76,6 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                             })
                         }}
                     />
+                    <VisitorRecorder />
                     {children}
                 </ThemeProvider>
             </body>
