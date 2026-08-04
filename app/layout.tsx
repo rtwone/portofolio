@@ -45,6 +45,37 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <html lang="en" suppressHydrationWarning>
             <body>
                 <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+                    {/* Structured data to help search engines show site name instead of raw URL */}
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{
+                            __html: JSON.stringify({
+                                "@context": "https://schema.org",
+                                "@graph": [
+                                    {
+                                        "@type": "Organization",
+                                        "@id": "https://irfanhariyanto.my.id/#organization",
+                                        "name": "Irfan Hariyanto",
+                                        "url": "https://irfanhariyanto.my.id",
+                                        "logo": "https://irfanhariyanto.my.id/icons/sparkles-icon.svg"
+                                    },
+                                    {
+                                        "@type": "WebSite",
+                                        "@id": "https://irfanhariyanto.my.id/#website",
+                                        "url": "https://irfanhariyanto.my.id",
+                                        "name": "Irfan Hariyanto",
+                                        "publisher": { "@id": "https://irfanhariyanto.my.id/#organization" }
+                                    },
+                                    {
+                                        "@type": "Person",
+                                        "@id": "https://irfanhariyanto.my.id/#person",
+                                        "name": "Irfan Hariyanto",
+                                        "url": "https://irfanhariyanto.my.id"
+                                    }
+                                ]
+                            })
+                        }}
+                    />
                     {children}
                 </ThemeProvider>
             </body>
