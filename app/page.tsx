@@ -296,7 +296,8 @@ export default function Home() {
                                 </div>
                                 <div className="mt-8 space-y-4">
                                     {educationTimeline[lang].map((item, index) => (
-                                        <motion.div key={item.school} whileHover={{ scale: 1.03, y: -4 }} transition={{ duration: 0.12 }} className="group relative overflow-hidden rounded-[24px] border border-[var(--border)] bg-[var(--surface)] p-4 shadow-[0_10px_30px_rgba(0,0,0,0.06)] sm:p-5">
+                                        <motion.div
+                                            key={item.school} whileHover={{ scale: 1.03, y: -4 }} transition={{ duration: 0.12 }} className="group relative overflow-hidden rounded-[24px] border border-[var(--border)] bg-[var(--surface)] p-4 shadow-[0_10px_30px_rgba(0,0,0,0.06)] sm:p-5">
                                             <div className="absolute inset-y-0 left-0 w-1.5 bg-[var(--accent)]" />
                                             <div className="flex items-start gap-4">
                                                 <div className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--accent)] text-sm font-bold text-[var(--text)] shadow-lg">
