@@ -1,16 +1,23 @@
 # Web Portofolio
 
-A premium personal portfolio platform showcasing the visual and technical work of Irfan Hariyanto. Built with Next.js App Router, Tailwind CSS, and Framer Motion for a polished, modern experience.
+Web Portofolio is a refined personal portfolio experience for Irfan Hariyanto, designed to present creative direction, brand identity, and technical expertise with clarity and polish.
 
-## Features
+## Brand Vision
 
-- Responsive portfolio homepage with animated hero and project preview
-- Dark theme support using `next-themes`
-- SEO-friendly metadata and JSON-LD structured data
-- Skills section with badge-style UI
-- LinkedIn call-to-action button on the homepage
-- Project cards with hover animation
-- Clean App Router structure with separate pages for home and projects
+This project is built as a premium portfolio showcase:
+
+- Elegant visual hierarchy with a warm neo-modern aesthetic
+- Subtle motion and interactive microcopy to enhance engagement
+- Dark-mode-first presentation for a professional digital brand
+- Clear contact action via LinkedIn to support high-quality networking
+
+## Highlights
+
+- Immersive homepage hero with motion-led atmospheric gradients
+- Skill badges and project previews crafted for modern portfolios
+- SEO-friendly metadata and structured JSON-LD support
+- Smooth, responsive layout tailored for desktop and mobile
+- LinkedIn call-to-action button optimized for client outreach
 
 ## Tech Stack
 
@@ -19,12 +26,12 @@ A premium personal portfolio platform showcasing the visual and technical work o
 - TypeScript
 - Tailwind CSS
 - Framer Motion
-- Lucide React icons
+- Lucide React
 - next-themes
 
 ## Getting Started
 
-### Install
+### Install dependencies
 
 ```bash
 npm install
@@ -36,30 +43,38 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000 in your browser.
+Then open `http://localhost:3000`.
 
-### Build for production
+### Production build
 
 ```bash
 npm run build
 ```
 
-### Lint
+### Linting
 
 ```bash
 npm run lint
 ```
 
+## Deployment
+
+This repository is ready to deploy to Vercel:
+
+1. Connect the GitHub repository to Vercel.
+2. Use the default Next.js build settings.
+3. Deploy the `main` branch.
+
 ## Project Structure
 
-- `app/` - Next.js app routes and pages
-- `app/page.tsx` - Homepage content and hero section
-- `app/projects/page.tsx` - Project listing page
-- `app/layout.tsx` - Root layout and metadata
-- `lib/` - Static content and project data
-- `components/` - Reusable UI components
+- `app/` — main application routes and server-rendered pages
+- `app/page.tsx` — homepage and presentation layer
+- `app/projects/page.tsx` — projects listing page
+- `app/layout.tsx` — root layout, metadata, and theme provider
+- `lib/` — static content, copy and project data
+- `components/` — reusable UI components
 
 ## Notes
 
-The repository currently focuses on portfolio presentation and LinkedIn engagement. Visitor analytics routes were removed for stability.
+This portfolio focuses on a premium visual presentation and strong LinkedIn engagement flow. Visitor analytics support was intentionally removed for simplicity and stability.
 
