@@ -5,7 +5,7 @@ export const homeContent = {
             title: 'Irfan Hariyanto — Graphic Designer & WhatsApp Bot Developer',
             badge: 'Selected Work',
             subtitle: 'Building a personal identity with warm neo style, calm content structure, and professional presentation of work.',
-            seeProjects: 'See Projects',
+            seeProjects: 'Tell More',
             contact: 'Contact',
         },
         about: {
@@ -60,7 +60,7 @@ export const homeContent = {
             title: 'Irfan Hariyanto — Desainer Grafis & WhatsApp Bot Developer',
             badge: 'Karya Terpilih',
             subtitle: 'Membangun identitas personal dengan gaya neo hangat, struktur konten yang tenang, dan presentasi karya yang profesional.',
-            seeProjects: 'Lihat Projek',
+            seeProjects: 'Lebih Lanjut',
             contact: 'Kontak',
         },
         about: {
