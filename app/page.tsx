@@ -234,7 +234,7 @@ export default function Home() {
                                 <p className="mt-6 max-w-2xl text-base leading-7 !text-[#d98888] dark:!text-[var(--text)] sm:text-lg">{t.hero.subtitle}</p>
                                 <div className="mt-10 flex flex-wrap gap-4">
                                     <a href="https://www.linkedin.com/in/irfanhariyanto/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-[var(--text)] transition hover:bg-[#c7954f]">
-                                        <Linkedin size={18} /> Tell More <ArrowRight size={18} />
+                                        <Linkedin size={18} /> {t.hero.seeProjects} <ArrowRight size={18} />
                                     </a>
                                 </div>
                             </div>
