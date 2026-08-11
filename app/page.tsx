@@ -1,7 +1,7 @@
 ﻿"use client";
 
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles, Instagram, Mail, Github, MessageCircle, ExternalLink } from 'lucide-react';
+import { ArrowRight, Sparkles, Linkedin, Instagram, Mail, Github, MessageCircle, ExternalLink } from 'lucide-react';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { homeContent, educationTimeline } from '@/lib/home-content';
 import { projects } from '@/lib/projects';
@@ -233,7 +233,9 @@ export default function Home() {
                                 <h1 className="mt-8 max-w-3xl text-4xl font-black leading-[0.96] text-[var(--text)] sm:text-5xl lg:text-6xl xl:text-[64px]">{t.hero.title}</h1>
                                 <p className="mt-6 max-w-2xl text-base leading-7 !text-[#d98888] dark:!text-[var(--text)] sm:text-lg">{t.hero.subtitle}</p>
                                 <div className="mt-10 flex flex-wrap gap-4">
-                                    <a href="#projects" className="inline-flex items-center gap-2 rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-[var(--text)] transition hover:bg-[#c7954f]">{t.hero.seeProjects} <ArrowRight size={18} /></a>
+                                    <a href="https://www.linkedin.com/in/irfanhariyanto/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-[var(--text)] transition hover:bg-[#c7954f]">
+                                        <Linkedin size={18} /> {t.hero.seeProjects} <ArrowRight size={18} />
+                                    </a>
                                 </div>
                             </div>
 
