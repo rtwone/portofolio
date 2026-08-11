@@ -1,6 +1,6 @@
-# WEBPortoLagi
+# Web Portofolio
 
-A personal portfolio website for Irfan Hariyanto built with Next.js App Router, Tailwind CSS, and Framer Motion.
+A premium personal portfolio platform showcasing the visual and technical work of Irfan Hariyanto. Built with Next.js App Router, Tailwind CSS, and Framer Motion for a polished, modern experience.
 
 ## Features
 
